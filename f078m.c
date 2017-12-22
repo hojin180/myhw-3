@@ -45,10 +45,11 @@ void load(char *file) {
 
   alloc_list = (char**)malloc(sizeof(char*) * mem_cnt);
 
-
+  step_flag = 1;
 }
 
 int main(int argc, char *argv[]) {
+  struct rlimit rlp;
 
   int i = 0, j = 0;
   int cnt = 0;
